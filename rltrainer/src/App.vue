@@ -1,13 +1,14 @@
 <template>
   <div id="app">
-    <div id="rank_container">
-      <RankCard background="Beckwith-Park.png" rank_file="bronze-2.png" isLeft="true"/>
-      <RankCard background="DFH-Stadium-Circuit.png" rank_file="silver-2.png"/>
-      <RankCard background="Forbidden-Temple.png" rank_file="gold-2.png" isLeft="true"/>
-      <RankCard background="Mannfield-Stadium.png" rank_file="platinum-2.png"/>
-      <RankCard background="Neon-Fields.png" rank_file="diamond-2.png" isLeft="true"/>
-      <RankCard background="Salty-Shores.png" rank_file="champ-2.png"/>
-      <RankCard background="Utopia-Coliseum-Snowy.png" rank_file="gc-2.webp" isLeft="true"/>
+    <h1><a href="login">log me in nigga</a></h1>
+    <div @hover="onHover" id="rank_container">
+      <RankCard background="Beckwith-Park.png" rank_file="BRONZE.png"/>
+      <RankCard background="DFH-Stadium-Circuit.png" rank_file="SILVER.png"/>
+      <RankCard background="Forbidden-Temple.png" rank_file="GOLD.png"/>
+      <RankCard background="Mannfield-Stadium.png" rank_file="PLATINUM.png"/>
+      <RankCard background="Neon-Fields.png" rank_file="DIAMOND.png"/>
+      <RankCard background="Salty-Shores.png" rank_file="CHAMPION.png"/>
+      <RankCard background="Utopia-Coliseum-Snowy.png" rank_file="GRAND_CHAMPION.webp"/>
     </div>
   </div>
 </template>
@@ -19,6 +20,11 @@ export default {
   name: 'App',
   components: {
     RankCard
+  },
+  methods: {
+    onHover() {
+      console.log("qj mu kura");
+    }
   }
 }
 </script>
@@ -30,7 +36,21 @@ body {
   background-color: #1A1A1A;
   color:white;
 }
+
 #rank_container {
   padding: 0;
 }
+
+body::-webkit-scrollbar {
+  width: 14px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #292828;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(95, 97, 83, .6);
+}
+
 </style>
