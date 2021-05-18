@@ -1,4 +1,4 @@
-# rltrainer
+# client
 
 ## Project setup
 ```
