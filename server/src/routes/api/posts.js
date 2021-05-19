@@ -2,6 +2,7 @@
 /* eslint-disable no-undef */
 const express = require('express');
 const mongodb = require('mongodb');
+const config = require('../../config/config')
 
 const router = express.Router();
 
@@ -29,7 +30,7 @@ router.delete('/:id', async (req, res) => {
 
 
 async function loadPostsCollection() {
-    const client = await mongodb.MongoClient.connect('mongodb+srv://admin:QCg5aoDqr6rkQJLSg8gnTXjYmP9E5nGoRBHXoEXXPrFhh9q3fXKeaJRnGfCKzNSzEtr8rn9PpLzMKzP6@rltrainer.kdkeh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+    const client = await mongodb.MongoClient.connect(config.db.uri, {
         useNewUrlParser: true
     });
 

@@ -13,7 +13,6 @@ const posts = require('./routes/api/posts');
 
 app.use('/api/posts', posts);
 
-
 app.get('/status', (req, res) => {
     res.send({
         message: 'RLTrainer BACKEND'

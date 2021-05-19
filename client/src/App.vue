@@ -1,14 +1,14 @@
 <template>
-  <BaseComponent />
+  <NavigationComponent />
 </template>
 
 <script>
-import BaseComponent from './components/BaseComponent.vue'
+import NavigationComponent from './components/NavigationComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    BaseComponent
+    NavigationComponent
   }
 }
 </script>
