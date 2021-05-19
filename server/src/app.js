@@ -1,13 +1,18 @@
-
+/* eslint-disable no-undef */
 const express = require('express')
-const bodyParser = require('body-parser')
 const cors = require('cors')
 const morgan = require('morgan')
 
 const app = express()
 app.use(morgan('combined'))
-app.use(bodyParser.json())
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }))
 app.use(cors())
+
+const posts = require('./routes/api/posts');
+
+app.use('/api/posts', posts);
+
 
 app.get('/status', (req, res) => {
     res.send({
@@ -15,4 +20,6 @@ app.get('/status', (req, res) => {
     })
 })
 
-app.listen(process.env.PORT || 8081)
+const port = process.env.PORT || 8081;
+
+app.listen(port, () => console.log(`Listening on port ` + port))
