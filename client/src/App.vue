@@ -1,34 +1,31 @@
 <template>
   <div id="app">
-    <NavigationComponent navbar_style="padding-left: 4px; background-color: #292929"/>
-    <b-img class="bg" :src="require('./assets/backgrounds/homepage-1.png')"></b-img>
-    <b-img class="bg" :src="require('./assets/backgrounds/homepage-2.png')"></b-img>
-    <b-img class="bg" :src="require('./assets/backgrounds/homepage-3.png')"></b-img>
+    <Homepage />
   </div>
 </template>
 
 <script>
-import Vue from 'vue'
-import NavigationComponent from './components/NavigationComponent'
-import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import Vue from "vue";
+import { BootstrapVue, BootstrapVueIcons } from "bootstrap-vue";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import Homepage from "./components/pages/Homepage";
 
-library.add(faUserSecret)
-Vue.component('font-awesome-icon', FontAwesomeIcon)
+library.add(faUserSecret);
+Vue.component("font-awesome-icon", FontAwesomeIcon);
 
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-vue/dist/bootstrap-vue.css";
 
-Vue.use(BootstrapVue)
-Vue.use(BootstrapVueIcons)
+Vue.use(BootstrapVue);
+Vue.use(BootstrapVueIcons);
 
 export default {
   components: {
-    NavigationComponent
-  }
-}
+    Homepage,
+  },
+};
 </script>
 
 <style>
@@ -41,14 +38,11 @@ export default {
   src: local("QuarcaCond"), url(/assets/fonts/QuarcaCond.otf) format("truetype");
 }
 
- .bg {
-   filter: brightness(75%);
-   width: 100%;
- }
-
-body {
+body, html {
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 /* width */
@@ -65,5 +59,4 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #121212;
 }
-
 </style>
