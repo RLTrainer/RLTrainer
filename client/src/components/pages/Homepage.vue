@@ -1,18 +1,21 @@
 <template>
   <div>
-    <header>
       <NavigationComponent
-        id="nav" navbar_style="padding-left: 4px; background-color: #292929"
+        id="nav"
+        navbar_style="padding-left: 0.1vw; background-color: #000B29; width: 100%;"
       />
-    </header>
     <div class="content">
       <div id="s1" class="repeat section-1">
         <!-- <RankCard rank_name="Silver V" rank_type="Shooter" /> -->
-        <a class="arrow" href="#s2"><img src="../../assets/icons/ARROW.png" alt=""></a>
+        <a class="arrow" href="#s2"
+          ><img src="../../assets/icons/ARROW.png" alt=""
+        /></a>
       </div>
       <div id="s2" class="repeat section-2">
         <!-- <RankCard rank_name="Gold V" rank_type="Type" /> -->
-        <a class="arrow" href="#s3"><img src="../../assets/icons/ARROW.png" alt=""></a>
+        <a class="arrow" href="#s3"
+          ><img src="../../assets/icons/ARROW.png" alt=""
+        /></a>
       </div>
       <div id="s3" class="repeat section-3">
         <RankCard rank_name="Diamond V" rank_type="Defender" />
@@ -30,29 +33,39 @@
 }
 
 .repeat {
+  width: 100%;
   display: block;
   height: 100%;
   background-size: cover;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   /* filter: brightness(75%); */
 }
 
-.section-1{background-image: url(../../assets/backgrounds/homepage-1.png);}
-.section-2{background-image: url(../../assets/backgrounds/homepage-2.png);}
-.section-3{background-image: url(../../assets/backgrounds/homepage-3.png);}
+.section-1 {
+  background-image: url(../../assets/backgrounds/homepage-1.png);
+}
+.section-2 {
+  position: relative;
+  background-image: url(../../assets/backgrounds/homepage-2.png);
+}
+.section-3 {
+  background-image: url(../../assets/backgrounds/homepage-3.png);
+}
 
-a, img {
+.arrow {
   position: absolute;
-  bottom: 0;
   left: 50%;
-  padding-bottom: 10em;
+  bottom: 0%;
+}
+
+.arrow img {
   animation: MoveUpDown 1.6s linear infinite;
   -webkit-animation: MoveUpDown 1.6s linear infinite;
-  object-position: left bottom;
 }
 
 @keyframes MoveUpDown {
-  0%, 100% {
+  0%,
+  100% {
     padding-bottom: 10em;
   }
   50% {
@@ -70,7 +83,7 @@ export default {
   components: {
     NavigationComponent,
     RankCard,
-    StaffCreditComponent
+    StaffCreditComponent,
   },
 };
 </script>

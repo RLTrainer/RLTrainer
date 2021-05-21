@@ -1,64 +1,84 @@
 <template>
   <div>
     <div class="container">
-      <div class="card">
-        <h2>xrexy</h2>
-        <div class="title title--programmer">Programmer</div>
-        <!-- <div class="desc">
-          David can develop any kind of software, he started learning to code
-          for about 10 years!
-        </div> -->
-        <img class="avatar" src="../assets/personal/xrexy.png" alt="xrexy">
-        <!-- <div class="actions">
-          <button class="actions__like">
-            like &nbsp; <i class="fas fa-heart"></i>
-          </button>
-          <button class="actions__trade">
-            trade &nbsp; <i class="fas fa-exchange-alt"></i>
-          </button>
-          <button class="actions__cancel">
-            close &nbsp; <i class="fas fa-times"></i>
-          </button>
-        </div> -->
-      </div>
-      <div class="card">
-        <h2>Xylia</h2>
-        <div class="title title--designer">Designer</div>
-        <!-- <div class="desc">
-          Morgan has collected ants since they were six years old and now has
-          many dozen ants but none in their pants.
-        </div> -->
-        <img class="avatar" src="../assets/personal/xylia.png" alt="xylia">
-        <!-- <div class="actions">
-          <button class="actions__like">
-            like &nbsp; <i class="fas fa-heart"></i>
-          </button>
-          <button class="actions__trade">
-            trade &nbsp; <i class="fas fa-exchange-alt"></i>
-          </button>
-          <button class="actions__cancel">
-            close &nbsp; <i class="fas fa-times"></i>
-          </button>
-        </div> -->
-      </div>
-      <div class="card">
-        <h2>Sayykii</h2>
-        <div class="title title--programmer">Programmer</div>
-        <!-- <div class="desc">
-          Isaac know very well every dollar and can identify fake ones from 10
-          miles away.
-        </div> -->
-        <img class="avatar" src="../assets/personal/sayykii.png" alt="sayykii">
-        <div class="actions">
-          <button class="actions__like">
-            like &nbsp; <i class="fas fa-heart"></i>
-          </button>
-          <button class="actions__trade">
-            trade &nbsp; <i class="fas fa-exchange-alt"></i>
-          </button>
-          <button class="actions__cancel">
-            close &nbsp; <i class="fas fa-times"></i>
-          </button>
+      <div class="row">
+        <div class="card col-sm-4">
+          <div class="row">
+            <h2>xrexy</h2>
+            <div class="title title--programmer">Programmer</div>
+            <!-- <div class="desc">
+            David can develop any kind of software, he started learning to code
+            for about 10 years!
+          </div> -->
+            <img
+              class="avatar col-sm-4"
+              src="../assets/personal/xrexy.png"
+              alt="xrexy"
+            />
+            <!-- <div class="actions">
+            <button class="actions__like">
+              like &nbsp; <i class="fas fa-heart"></i>
+            </button>
+            <button class="actions__trade">
+              trade &nbsp; <i class="fas fa-exchange-alt"></i>
+            </button>
+            <button class="actions__cancel">
+              close &nbsp; <i class="fas fa-times"></i>
+            </button>
+          </div> -->
+          </div>
+        </div>
+        <div class="card col-sm-4">
+          <div class="row">
+            <h2>Xylia</h2>
+            <div class="title title--designer">Designer</div>
+            <!-- <div class="desc">
+              Morgan has collected ants since they were six years old and now has
+              many dozen ants but none in their pants.
+            </div> -->
+            <img
+              class="avatar col-sm-4"
+              src="../assets/personal/xylia.png"
+              alt="xylia"
+            />
+            <!-- <div class="actions">
+              <button class="actions__like">
+                like &nbsp; <i class="fas fa-heart"></i>
+              </button>
+              <button class="actions__trade">
+                trade &nbsp; <i class="fas fa-exchange-alt"></i>
+              </button>
+              <button class="actions__cancel">
+                close &nbsp; <i class="fas fa-times"></i>
+              </button>
+            </div> -->
+          </div>
+        </div>
+        <div class="card col-sm-4 col">
+          <div class="row">
+            <h2>Sayykii</h2>
+            <div class="title title--programmer">Programmer</div>
+            <!-- <div class="desc">
+            Isaac know very well every dollar and can identify fake ones from 10
+            miles away.
+          </div> -->
+            <img
+              class="avatar col-sm-4 col"
+              src="../assets/personal/sayykii.png"
+              alt="sayykii"
+            />
+            <div class="actions">
+              <button class="actions__like">
+                like &nbsp; <i class="fas fa-heart"></i>
+              </button>
+              <button class="actions__trade">
+                trade &nbsp; <i class="fas fa-exchange-alt"></i>
+              </button>
+              <button class="actions__cancel">
+                close &nbsp; <i class="fas fa-times"></i>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -67,7 +87,6 @@
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
-
 
 .container {
   display: flex;
