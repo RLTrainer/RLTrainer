@@ -13,7 +13,7 @@
           <b-nav-item class="b-navbar-nav-1-item" href="#"
             >Training packs</b-nav-item
           >
-          <div class="dropdown-content">
+          <!-- <div class="dropdown-content">
             <a href="#">Bronze</a>
             <a href="#">Silver</a>
             <a href="#">Gold</a>
@@ -21,12 +21,11 @@
             <a href="#">Diamond</a>
             <a href="#">Champion</a>
             <a href="#">Grand champion</a>
-          </div>
-          <div class="split"></div>
+          </div> -->
           <b-nav-item class="b-navbar-nav-1-item" href="#"
             >Workshop Maps</b-nav-item
           >
-          <b-nav-item class="b-navbar-nav-1-item" href="#">Credit</b-nav-item>
+          <b-nav-item class="b-navbar-nav-1-item" href="/credit">Credit</b-nav-item>
           <b-nav-item class="b-navbar-nav-1-item" href="#">About</b-nav-item>
         </b-navbar-nav>
 
@@ -45,8 +44,8 @@
           </form>
 
           <b-nav-item-dropdown class="user" right>
-            <!-- <div ></div> IF LOGGED IN--> 
-            <!-- <div></div> IF NOT LOGGED IN-->
+            <!-- <div v-if></div> IF LOGGED IN-->
+            <!-- <div v-else></div> IF NOT LOGGED IN-->
             <template #button-content>
               <em>xXProGamerXx69Xx</em>
             </template>
@@ -112,9 +111,9 @@
   display: none;
   position: absolute;
   background-color: #292929;
-  min-width: 19.1vw;
-  margin-left: 3vw;
-  margin-top: 5.5vw;
+  min-width: 10.75vw;
+  margin-left: 1.25vw;
+  margin-top: 2.6vw;
   z-index: 1;
 }
 
@@ -122,7 +121,7 @@
   color: #8e9494;
   padding: 12px 16px;
   font-family: "Navine", Arial;
-  font-size: 1.7vw;
+  font-size: 1vw;
   text-decoration: none;
   display: block;
   text-transform: uppercase;
@@ -131,7 +130,7 @@
 .dropdown-content a:hover {
   color: white;
   text-decoration: none;
-  font-size: 1.8vw;
+  font-size: 1.05vw;
 }
 
 .search-icon .search__input {
@@ -179,7 +178,8 @@
 
 .user {
   font-family: Arial;
-  font-size: 1.2vw;
+  font-size: 1.05vw;
+  text-align: center;
   margin-left: 0.6vw;
 }
 

@@ -2,7 +2,7 @@
   <div>
       <NavigationComponent
         id="nav"
-        navbar_style="padding-left: 0.1vw; background-color: #000B29; width: 100%;"
+        navbar_style="padding: 0.6vw; background-color: #292929; width: 100%;"
       />
     <div class="content">
       <div id="s1" class="repeat section-1">
@@ -38,7 +38,7 @@
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  /* filter: brightness(75%); */
+  filter: brightness(85%);
 }
 
 .section-1 {
@@ -56,20 +56,18 @@
   position: absolute;
   left: 50%;
   bottom: 0%;
-}
-
-.arrow img {
   animation: MoveUpDown 1.6s linear infinite;
   -webkit-animation: MoveUpDown 1.6s linear infinite;
 }
 
+
 @keyframes MoveUpDown {
   0%,
   100% {
-    padding-bottom: 10em;
+    margin-bottom: 10em;
   }
   50% {
-    padding-bottom: 11em;
+    margin-bottom: 11em;
   }
 }
 </style>
@@ -80,6 +78,7 @@ import RankCard from "../RankCard";
 import StaffCreditComponent from "../StaffCreditComponent";
 
 export default {
+  name: "Homepage",
   components: {
     NavigationComponent,
     RankCard,

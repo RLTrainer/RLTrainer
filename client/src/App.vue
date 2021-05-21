@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Homepage />
+    <router-view/>
   </div>
 </template>
 
@@ -10,7 +10,6 @@ import { BootstrapVue, BootstrapVueIcons } from "bootstrap-vue";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import Homepage from "./components/pages/Homepage";
 
 library.add(faUserSecret);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
@@ -20,12 +19,6 @@ import "bootstrap-vue/dist/bootstrap-vue.css";
 
 Vue.use(BootstrapVue);
 Vue.use(BootstrapVueIcons);
-
-export default {
-  components: {
-    Homepage,
-  },
-};
 </script>
 
 <style>
@@ -50,11 +43,11 @@ body, html {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #292929;
+  background: #121212;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #121212;
+  background: #292929;
 }
 </style>
