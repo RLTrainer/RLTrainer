@@ -1,7 +1,6 @@
 <template>
     <div>
-        <!-- <NavigationComponent navbar_style="padding: 0.6vw; background-color: #292929; width: 100%;" /> -->
-        <h1>kur</h1>
+        <NavigationComponent navbar_style="padding: 0.6vw; background-color: #292929; width: 100%;" />
     </div>
 </template>
 
@@ -10,11 +9,11 @@
 </style>
 
 <script>
-// import NavigationComponent from '../NavigationComponent'
+import NavigationComponent from '../NavigationComponent'
 
 export default {
     components: {
-        // NavigationComponent
+        NavigationComponent
     }    
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view />
+    <router-view></router-view>
   </div>
 </template>
 
@@ -10,6 +10,9 @@ import { BootstrapVue, BootstrapVueIcons } from "bootstrap-vue";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import VueRouter from 'vue-router'
+
+Vue.use(VueRouter)
 
 library.add(faUserSecret);
 Vue.component("font-awesome-icon", FontAwesomeIcon);

@@ -2,7 +2,7 @@
   <b-container fluid>
     <b-row>
       <b-navbar id="b-navbar" :style="navbar_style" type="dark">
-        <a href="#"
+        <a href="/"
           ><img
             id="logo"
             :src="require('../assets/RL-TRAINER.png')"
@@ -10,7 +10,7 @@
           />
         </a>
         <b-navbar-nav id="b-navbar-nav-1">
-          <b-nav-item class="b-navbar-nav-1-item" href="#"
+          <b-nav-item class="b-navbar-nav-1-item" href="/packs"
             >Training packs</b-nav-item
           >
           <!-- <div class="dropdown-content">
@@ -22,11 +22,11 @@
             <a href="#">Champion</a>
             <a href="#">Grand champion</a>
           </div> -->
-          <b-nav-item class="b-navbar-nav-1-item" href="#"
+          <b-nav-item class="b-navbar-nav-1-item" href="/maps"
             >Workshop Maps</b-nav-item
           >
           <b-nav-item class="b-navbar-nav-1-item" href="/credit">Credit</b-nav-item>
-          <b-nav-item class="b-navbar-nav-1-item" href="#">About</b-nav-item>
+          <b-nav-item class="b-navbar-nav-1-item" href="/about">About</b-nav-item>
         </b-navbar-nav>
 
         <b-navbar-nav class="ml-auto">
