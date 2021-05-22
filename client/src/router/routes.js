@@ -1,15 +1,14 @@
-import Homepage from '../components/pages/Homepage'
-import Credit from '../components/pages/Credit'
+import Homepage from "../components/pages/Homepage";
+import Credit from "../components/pages/Credit";
 
 export default [
   {
-    path: '/',
-    name: 'Home',
-    component: Homepage,
+    path: "/",
+    component: Homepage
   },
   {
-    path: '/credit',
-    name: 'Credit',
-    component: Credit
-  }
+    path: "/credit",
+    component: Credit,
+    name: 'RLTrainer - Credit'
+  },
 ];

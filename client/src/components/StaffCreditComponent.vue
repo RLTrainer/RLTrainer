@@ -1,16 +1,15 @@
 <template>
-  <div>
-    <div class="container">
-      <div class="row">
-        <div class="card col-lg-3 col-md-8 col-sm-6 col-xs-2">
-          <h2>xrexy</h2>
-          <div class="title title--programmer">Programmer</div>
-          <!-- <div class="desc">
+  <div class="container">
+    <div class="row">
+      <div class="card col-lg-3 col-md-8 col-sm-6 col-xs-2">
+        <h2>xrexy</h2>
+        <div class="title title--programmer">Programmer</div>
+        <!-- <div class="desc">
             David can develop any kind of software, he started learning to code
             for about 10 years!
           </div> -->
-          <img class="avatar" src="../assets/personal/xrexy.png" alt="xrexy" />
-          <!-- <div class="actions">
+        <img class="avatar" src="../assets/personal/xrexy.png" alt="xrexy" />
+        <!-- <div class="actions">
             <button class="actions__like">
               like &nbsp; <i class="fas fa-heart"></i>
             </button>
@@ -21,17 +20,16 @@
               close &nbsp; <i class="fas fa-times"></i>
             </button>
           </div> -->
-        </div>
-        -
-        <div class="card col-lg-3 col-md-8 col-sm-6 col-xs-2">
-          <h2>Xylia</h2>
-          <div class="title title--designer">Designer</div>
-          <!-- <div class="desc">
+      </div>
+      <div class="card col-lg-3 col-md-8 col-sm-6 col-xs-2">
+        <h2>Xylia</h2>
+        <div class="title title--designer">Designer</div>
+        <!-- <div class="desc">
               Morgan has collected ants since they were six years old and now has
               many dozen ants but none in their pants.
             </div> -->
-          <img class="avatar" src="../assets/personal/xylia.png" alt="xylia" />
-          <!-- <div class="actions">
+        <img class="avatar" src="../assets/personal/xylia.png" alt="xylia" />
+        <!-- <div class="actions">
               <button class="actions__like">
                 like &nbsp; <i class="fas fa-heart"></i>
               </button>
@@ -42,21 +40,19 @@
                 close &nbsp; <i class="fas fa-times"></i>
               </button>
             </div> -->
-        </div>
-        <div class="card col-lg-3 col-md-8 col-sm-6 col-xs-2">
-          <h2>Sayykii</h2>
-          <div class="title title--programmer">Programmer</div>
-          <!-- <div class="desc">
+      </div>
+      <div class="card col-lg-3 col-md-8 col-sm-6 col-xs-2">
+        <h2>Sayykii</h2>
+        <div class="title title--programmer">Programmer</div>
+        <!-- <div class="desc">
             Isaac know very well every dollar and can identify fake ones from 10
             miles away.
           </div> -->
-          <img
-            class="avatar"
-            src="../assets/personal/sayykii.png"
-            alt="sayykii"
-          />
-          
-        </div>
+        <img
+          class="avatar"
+          src="../assets/personal/sayykii.png"
+          alt="sayykii"
+        />
       </div>
     </div>
   </div>
@@ -96,6 +92,7 @@
   border-radius: 50px;
   transition: 0.2s;
   cursor: pointer;
+  margin-bottom: 2vw;
 }
 
 .title--programmer {
@@ -179,6 +176,13 @@ a:visited {
 
 button::-moz-focus-inner {
   border: 0;
+}
+
+.avatar {
+  height: 5.2vw;
+  width: auto;
+  border-radius: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 </style>
 

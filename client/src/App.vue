@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <NavigationComponent
+      navbar_style="padding: 0.6vw; background-color: #292929; width: 100%;"
+    />
     <router-view></router-view>
   </div>
 </template>
@@ -10,9 +13,7 @@ import { BootstrapVue, BootstrapVueIcons } from "bootstrap-vue";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import VueRouter from 'vue-router'
-
-Vue.use(VueRouter)
+import NavigationComponent from "./components/NavigationComponent";
 
 library.add(faUserSecret);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
@@ -23,7 +24,11 @@ import "bootstrap-vue/dist/bootstrap-vue.css";
 Vue.use(BootstrapVue);
 Vue.use(BootstrapVueIcons);
 
-export default {}
+export default {
+  components: {
+    NavigationComponent,
+  },
+};
 </script>
 
 <style>
@@ -36,7 +41,8 @@ export default {}
   src: local("QuarcaCond"), url(/assets/fonts/QuarcaCond.otf) format("truetype");
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
 }

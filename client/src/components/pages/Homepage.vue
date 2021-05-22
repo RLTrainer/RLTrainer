@@ -1,9 +1,5 @@
 <template>
   <div>
-      <NavigationComponent
-        id="nav"
-        navbar_style="padding: 0.6vw; background-color: #292929; width: 100%;"
-      />
     <div class="content">
       <div id="s1" class="repeat section-1">
         <!-- <RankCard rank_name="Silver V" rank_type="Shooter" /> -->
@@ -19,7 +15,6 @@
       </div>
       <div id="s3" class="repeat section-3">
         <RankCard rank_name="Diamond V" rank_type="Defender" />
-        <StaffCreditComponent />
       </div>
     </div>
   </div> 
@@ -73,16 +68,12 @@
 </style>
 
 <script>
-import NavigationComponent from "../NavigationComponent";
 import RankCard from "../RankCard";
-import StaffCreditComponent from "../StaffCreditComponent";
 
 export default {
   name: "Homepage",
   components: {
-    NavigationComponent,
-    RankCard,
-    StaffCreditComponent,
-  },
+    RankCard
+  }
 };
 </script>
