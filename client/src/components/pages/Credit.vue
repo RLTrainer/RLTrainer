@@ -3,36 +3,36 @@
     <h2>THE TEAM</h2>
     <hr />
     <div class="content">
-      <StaffCreditComponent
-        class="item"
-        job_class="Developer"
-        user="xRexy"
-        responsibilities="Administration|Website and Server Maintance"
-        user_desc="Fullstack Developer"
-        copy_data="xrexy#3616"
-        :image_url="require('@/assets/personal/xrexy.png')"
-        @showAlert="showAlert"
-      />
-      <StaffCreditComponent
-        class="item"
-        job_class="Designer"
-        user="Xylia"
-        user_desc="Interface Designer"
-        responsibilities="Administration|UI Development"
-        copy_data="X឵#3301"
-        :image_url="require('@/assets/personal/xylia.png')"
-        @showAlert="showAlert"
-      />
-      <StaffCreditComponent
-        class="item"
-        job_class="Developer"
-        user="Sayykii"
-        responsibilities="Administration|Website Maintance"
-        user_desc="Fullstack Developer"
-        copy_data="Sayykii#4632"
-        :image_url="require('@/assets/personal/sayykii.png')"
-        @showAlert="showAlert"
-      />
+        <StaffCreditComponent
+          class="item"
+          job_class="Developer"
+          user="xRexy"
+          responsibilities="Administration|Website and Server Maintance"
+          user_desc="Fullstack Developer"
+          copy_data="xrexy#3616"
+          :image_url="require('@/assets/personal/xrexy.png')"
+          @showAlert="showAlert"
+        />
+        <StaffCreditComponent
+          class="item"
+          job_class="Designer"
+          user="Xylia"
+          user_desc="Interface Designer"
+          responsibilities="Administration|UI Development"
+          copy_data="X឵#3301"
+          :image_url="require('@/assets/personal/xylia.png')"
+          @showAlert="showAlert"
+        />
+        <StaffCreditComponent
+          class="item"
+          job_class="Developer"
+          user="Sayykii"
+          responsibilities="Administration|Website Maintance"
+          user_desc="Fullstack Developer"
+          copy_data="Sayykii#4632"
+          :image_url="require('@/assets/personal/sayykii.png')"
+          @showAlert="showAlert"
+        />
     </div>
     <!-- <div class="content">
       <StaffCreditComponent
@@ -91,16 +91,20 @@ hr {
   height: 3px;
   /* background: #fff; */
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #fff, rgba(255, 255, 255, 0));
+  background-size: cover;
   margin-bottom: 3.5rem;
   margin-top: 2rem;
 }
 
 #credit {
   position: absolute;
-  height: 100%;
-  width: 100%;
-  background: url(../../assets/backgrounds/homepage-1.png) fixed center repeat;
+  background: url(../../assets/backgrounds/homepage-1.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+  width:100vw;height:auto;
+  min-height: 100%;
 }
 
 .content .item {
@@ -132,6 +136,15 @@ export default {
     showAlert() {
       this.dismissCountDown = this.dismissSecs;
     },
+    resizeHandler() {
+      
+    }
   },
+  created() {
+    window.addEventListener("resize", this.resizeHandler);
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.resizeHandler);
+  }
 };
 </script>

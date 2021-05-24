@@ -85,6 +85,10 @@
   padding-bottom: 0.1vw;
 }
 
+#b-navbar {
+  text-align: center;
+}
+
 .b-navbar-nav-1-item {
   margin-right: 2.3vw;
   font-size: 1.3vw;

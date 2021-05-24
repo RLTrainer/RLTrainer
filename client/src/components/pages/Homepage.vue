@@ -8,10 +8,11 @@
         /></a>
       </div>
       <div id="s2" class="repeat section-2">
+        <MapCard />
         <!-- <RankCard rank_name="Gold V" rank_type="Type" /> -->
-        <a class="arrow" href="#s3"
-          ><img src="../../assets/icons/ARROW.png" alt=""
-        /></a>
+        <a class="arrow" href="#s3">
+        <img src="../../assets/icons/ARROW.png" alt=""/>
+        </a>
       </div>
       <div id="s3" class="repeat section-3">
         <RankCard rank_name="Diamond V" rank_type="Defender" />
@@ -49,10 +50,17 @@
 
 .arrow {
   position: absolute;
-  left: 50%;
   bottom: 0%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
   animation: MoveUpDown 1.6s linear infinite;
   -webkit-animation: MoveUpDown 1.6s linear infinite;
+}
+
+.arrow img {
+  width:6rem;height:auto;
+  min-height: 6rem;
 }
 
 
@@ -68,12 +76,14 @@
 </style>
 
 <script>
+import MapCard from "../MapCard";
 import RankCard from "../RankCard";
 
 export default {
   name: "Homepage",
   components: {
-    RankCard
+    RankCard,
+    MapCard
   }
 };
 </script>

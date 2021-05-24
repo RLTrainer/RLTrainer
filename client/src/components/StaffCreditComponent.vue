@@ -65,7 +65,7 @@ p {
   padding-top: 30px;
   position: relative;
   width: 350px;
-  max-width: 100%;
+  max-width: 75%;
   text-align: center;
 }
 
@@ -85,7 +85,7 @@ p {
   color: #231e39;
   background-color: #ff6363;
   border-radius: 3px;
-  font-size: 14px;
+  font-size-adjust: inherit;
   font-weight: bold;
   padding: 3px 7px;
   position: absolute;
@@ -94,10 +94,10 @@ p {
 }
 
 .card-container .Designer {
-  color: #231e39;
+  color: #231e39; 
   background-color: #3ad661;
   border-radius: 3px;
-  font-size: 14px;
+  font-size-adjust: inherit;
   font-weight: bold;
   padding: 3px 7px;
   position: absolute;
