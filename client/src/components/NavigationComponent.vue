@@ -25,8 +25,12 @@
           <b-nav-item class="b-navbar-nav-1-item" href="/maps"
             >Workshop Maps</b-nav-item
           >
-          <b-nav-item class="b-navbar-nav-1-item" href="/credit">Credit</b-nav-item>
-          <b-nav-item class="b-navbar-nav-1-item" href="/about">About</b-nav-item>
+          <b-nav-item class="b-navbar-nav-1-item" href="/theteam"
+            >The Team</b-nav-item
+          >
+          <!-- <a href="https" target="_blank"> -->
+            <b-nav-item href="/discord" class="b-navbar-nav-1-item">Discord</b-nav-item>
+          <!-- </a> -->
         </b-navbar-nav>
 
         <b-navbar-nav class="ml-auto">
@@ -187,6 +191,12 @@
   font-size: 1vw;
   padding-left: 0.3vw;
   padding-right: 0.3vw;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  border: none;
 }
 </style>
 

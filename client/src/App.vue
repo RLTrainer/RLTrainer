@@ -1,10 +1,12 @@
 <template>
   <div id="app">
     <NavigationComponent
-      navbar_style="padding: 0.6vw; background-color: #292929; width: 100%;"
+      navbar_style="padding: 0.6vw; background: linear-gradient(to top, rgb(43, 37, 71), rgb(19, 16, 33)); width: 100%;"
     />
     <router-view></router-view>
   </div>
+
+  <!-- 1f1a36 -->
 </template>
 
 <script>
@@ -60,5 +62,11 @@ html {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #292929;
+}
+
+.alert {
+  position: fixed;
+  bottom: 1vw;
+  right: 2vw;
 }
 </style>
