@@ -7,7 +7,7 @@
         class="item"
         job_class="Developer"
         user="xRexy"
-        responsibilities="Administration|Website and Server Maintance"
+        responsibilities="Administration|Website and Server Maintenance"
         user_desc="Fullstack Developer"
         copy_data="xrexy#3616"
         :image_url="require('@/assets/personal/xrexy.png')"
@@ -18,7 +18,7 @@
         job_class="Designer"
         user="Xylia"
         user_desc="Interface Designer"
-        responsibilities="Administration|UI Development"
+        responsibilities="Administration|UI Improvements"
         copy_data="X឵#3301"
         :image_url="require('@/assets/personal/xylia.png')"
         @showAlert="showAlert"
@@ -27,7 +27,7 @@
         class="item"
         job_class="Developer"
         user="Sayykii"
-        responsibilities="Administration|Website Maintance"
+        responsibilities="Administration|Website Maintenance"
         user_desc="Fullstack Developer"
         copy_data="Sayykii#4632"
         :image_url="require('@/assets/personal/sayykii.png')"
@@ -114,11 +114,15 @@ hr {
   min-height: 100%;
 }
 
+.content {
+  display: flex;
+  justify-content: center;
+}
+
 .content .item {
   display: inline-block;
   margin-right: 2rem;
   margin-bottom: 2rem;
-  left: 25%;
 }
 </style>
 

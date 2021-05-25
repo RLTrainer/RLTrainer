@@ -5,8 +5,8 @@
         <a class="arrow" href="#s2">
           <img src="../../assets/icons/ARROW.png" alt="" />
         </a>
+        <h2>Top Weekly</h2>
         <div class="map-wrapper">
-          <h2>Top Weekly</h2>
           <MapComponent
             class="item"
             :map="{
@@ -50,8 +50,8 @@
             }"
           />
         </div>
+        <h2>Top Monthly</h2>
         <div class="map-wrapper">
-          <h2>Top Monthly</h2>
           <MapComponent
             class="item"
             :map="{
@@ -92,7 +92,6 @@
         -->
       </div>
       <div id="s2" class="repeat section-2">
-        <MapCard />
         <a class="arrow" href="#s3">
           <img src="../../assets/icons/ARROW.png" alt="" />
         </a>
@@ -134,14 +133,16 @@ h2 {
   font-size: 50px;
   font-weight: bold;
   left: 20.5vw;
-  margin: 0;
-  padding: 0;
 
-  padding-top: 4vw;
+  text-align: center;
+
+  padding-top: 2vw;
 
   text-transform: uppercase;
 
-  writing-mode: vertical-rl;
+  text-shadow: 3px 3px 4px black;
+
+  /* writing-mode: vertical-rl; */
 }
 .repeat {
   width: 100%;
@@ -201,14 +202,12 @@ h2 {
 </style>
 
 <script>
-import MapCard from "../MapCard";
 import MapComponent from "../MapComponent";
 
 export default {
   name: "Homepage",
   components: {
     MapComponent,
-    MapCard,
   },
 };
 </script>

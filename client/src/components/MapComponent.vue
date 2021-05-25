@@ -7,18 +7,20 @@
       class="card-image"
     >
       <span>{{ map.code }}</span>
+      <span>Uploaded by <span style="display: inline-block;">{{map.author}}</span></span>
     </div>
 
     <div class="card-text">
       <h2 id="map-title">
-        {{ map.name }} <span class="author">{{ map.author }}</span>
+        {{ map.name }}
+        <!-- <span class="author">{{ map.author }}</span> -->
       </h2>
-      <div id="desc">
+      <!-- <div id="desc">
         <p>{{ map.description }}</p>
-      </div>
-      <p id="code">{{ map.code }}</p>
+      </div> -->
+      <!-- <p id="code">{{ map.code }}</p> -->
     </div>
-    <div class="card-stats">
+    <!-- <div class="card-stats">
       <div class="stat">
         <div class="value">132</div>
         <div class="type">Likes</div>
@@ -27,33 +29,14 @@
         <div class="value">32</div>
         <div class="type">Comments</div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <style scoped>
-.card {
-  display: grid;
-  grid-template-columns: 300px;
-  grid-template-rows: 210px 210px 80px;
-  grid-template-areas: "image" "text" "stats";
-  width: 15vw;
-  border-radius: 18px;
-  background: white;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-  font-family: Roboto, Arial;
-  text-align: center;
-  transition: 0.2s;
-  cursor: pointer;
-  margin: 1px;
-  height: auto;
-  border: none;
-  outline: none;
-}
-
 @media screen and (max-width: 1200px) {
   .card {
-    width: 40vw;
+    width: 30vw;
     font-size: 10px;
   }
 
@@ -78,9 +61,9 @@
     display: none;
   }
 
-  .card-image {
+  /* .card-image {
     display: none;
-  }
+  } */
 
   .value {
     display: none;
@@ -95,10 +78,30 @@
   }
 }
 
-#desc {
+.card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 210px 80px;
+  grid-template-areas: "image" "text" "stats";
+
+  width: 18vw;
+  height: 22vh;
+
+  border-radius: 18px;
+  background: black;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  font-family: Roboto, Arial;
+  text-align: center;
+  transition: 0.2s;
+  cursor: pointer;
+  margin: 1px;
+  border: none;
+}
+
+/* #desc {
   height: 11vh;
   overflow: hidden;
-}
+} */
 
 #code {
   font-size: 90px;
@@ -130,12 +133,14 @@
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: contain;
-  height: 12vh;
+  height: 16vh;
+
+  border-bottom: 3px solid #1da1da;
 }
 
 .card-text {
   grid-area: text;
-  margin: 25px;
+  margin-top: 1vh;
 }
 .card-text .author {
   color: rgb(255, 7, 110);
@@ -150,9 +155,24 @@
   margin: 0;
 }
 .card-text h2 {
-  margin-top: 0px;
   font-size: 28px;
+  font-family: Navine, Arial;
+
+  color: white;
 }
+
+.card-image span {
+  text-shadow: 3px 3px 4px black;
+}
+
+.card-image span:last-child{
+  color: white;
+  font-size: 16px;
+}
+
+/* .card-image span:last-child span {
+  color: aqua;
+} */
 
 .card-stats {
   grid-area: stats;
@@ -183,6 +203,10 @@
 .card:hover .card-image span {
   display: block;
 }
+
+/* .card:hover .card-image>* {
+  filter: blur(1px);
+} */
 </style>
 
 <script>

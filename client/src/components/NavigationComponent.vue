@@ -80,9 +80,6 @@
   form {
     display: none;
   }
-  .b-navbar-nav-1-item {
-    
-  }
 }
 
 #logo {
