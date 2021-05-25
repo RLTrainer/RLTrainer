@@ -101,6 +101,7 @@
 }
 
 #code {
+  font-size: 90px;
   padding-top: 0.5vw;
   display: none;
 }
@@ -109,7 +110,7 @@
   position: relative;
   top: 40%;
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Navine", Arial;
   display: none;
 }
