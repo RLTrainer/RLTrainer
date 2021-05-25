@@ -8,14 +8,15 @@
     >
       <span>{{ map.code }}</span>
     </div>
-    <!-- <div class="card-image"></div> -->
 
     <div class="card-text">
-      <h2>
+      <h2 id="map-title">
         {{ map.name }} <span class="author">{{ map.author }}</span>
       </h2>
-      <p>Some random ass description</p>
-      <!-- <p id="code">{{ map.code }}</p> -->
+      <div id="desc">
+        <p>{{ map.description }}</p>
+      </div>
+      <p id="code">{{ map.code }}</p>
     </div>
     <div class="card-stats">
       <div class="stat">
@@ -36,22 +37,41 @@
   grid-template-columns: 300px;
   grid-template-rows: 210px 210px 80px;
   grid-template-areas: "image" "text" "stats";
-  width: 14vw;
+  width: 15vw;
   border-radius: 18px;
   background: white;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-  font-family: roboto;
+  font-family: Roboto, Arial;
   text-align: center;
-  transition: 0.5s ease;
+  transition: 0.2s;
   cursor: pointer;
   margin: 1px;
+  height: auto;
+  border: none;
+  outline: none;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   .card {
     width: 40vw;
-    font-size: 8px;
-    text-align: left;
+    font-size: 10px;
+  }
+
+  .card-text #desc {
+    height: 0;
+  }
+
+  #map-title {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  #map-title span {
+    font-size: 9px;
+  }
+
+  .card .card-stats {
+    display: none;
   }
 
   p {
@@ -62,13 +82,27 @@
     display: none;
   }
 
-  span {
+  .value {
+    display: none;
+  }
+
+  .type {
+    display: none;
+  }
+
+  .card-image span {
     display: none;
   }
 }
 
+#desc {
+  height: 11vh;
+  overflow: hidden;
+}
+
 #code {
   padding-top: 0.5vw;
+  display: none;
 }
 
 .card-image span {
@@ -108,8 +142,11 @@
 }
 .card-text p {
   color: grey;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
+
+  padding: 0;
+  margin: 0;
 }
 .card-text h2 {
   margin-top: 0px;
@@ -138,11 +175,11 @@
 }
 
 .card:hover {
-  transform: scale(1.02);
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+  transform: scale(1.03);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
 }
 
-.card:hover .card-image span{
+.card:hover .card-image span {
   display: block;
 }
 </style>

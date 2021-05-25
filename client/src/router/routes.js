@@ -1,5 +1,7 @@
-import Homepage from "../components/pages/Homepage";
-import Credit from "../components/pages/Credit";
+import Homepage from "@/components/pages/Homepage";
+import Credit from "@/components/pages/Credit";
+import Discord from "@/components/pages/Discord";
+import TrainingPacks from "@/components/pages/TrainingPacks";
 
 export default [
   {
@@ -13,9 +15,15 @@ export default [
   },
   {
     path: "/discord",
+    component: Discord,
+    name: "RLTrainer - Discord",
     beforeEnter() {
       window.location.replace("https://discord.gg/Vp6FSzheUP");
     },
-    name: "RLTrainer - Discord",
+  },
+  {
+    path: "/packs",
+    component: TrainingPacks,
+    name: "RLTrainer - Training Packs",
   },
 ];
