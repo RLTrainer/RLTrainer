@@ -2,32 +2,122 @@
   <div>
     <div class="content">
       <div id="s1" class="repeat section-1">
-        <!-- <RankCard rank_name="Silver V" rank_type="Shooter" /> -->
-        <a class="arrow" href="#s2"
-          ><img src="../../assets/icons/ARROW.png" alt=""
-        /></a>
+        <a class="arrow" href="#s2">
+          <img src="../../assets/icons/ARROW.png" alt="" />
+        </a>
+        <h2>Top Weekly</h2>
+        <div class="map-wrapper">
+          <MapComponent
+            class="item"
+            :map="{
+              name: 'Power Shots',
+              author: 'Sayykii',
+              image: require('@/assets/backgrounds/homepage-1.png'),
+              code: '0CB0-16C8-DAAD-B578',
+            }"
+          />
+          <MapComponent
+            class="item"
+            :map="{
+              name: 'Power Shots',
+              author: 'Sayykii',
+              image: require('@/assets/backgrounds/homepage-2.png'),
+              code: '0CB0-16C8-DAAD-B578',
+            }"
+          />
+          <MapComponent
+            class="item"
+            :map="{
+              name: 'Power Shots',
+              author: 'Sayykii',
+              image: require('@/assets/backgrounds/homepage-3.png'),
+              code: '0CB0-16C8-DAAD-B578',
+            }"
+          />
+          <MapComponent
+            class="item"
+            :map="{
+              name: 'Power Shots',
+              author: 'Sayykii',
+              image: require('@/assets/backgrounds/homepage-1.png'),
+              code: '0CB0-16C8-DAAD-B578',
+            }"
+          />
+        </div>
+        <h2>Top Monthly</h2>
+        <div class="map-wrapper">
+          <MapComponent
+            class="item"
+            :map="{
+              name: 'Power Shots',
+              author: 'Sayykii',
+              image: require('@/assets/backgrounds/homepage-1.png'),
+              code: '0CB0-16C8-DAAD-B578',
+            }"
+          />
+          <MapComponent
+            class="item"
+            :map="{
+              name: 'Power Shots',
+              author: 'Sayykii',
+              image: require('@/assets/backgrounds/homepage-2.png'),
+              code: '0CB0-16C8-DAAD-B578',
+            }"
+          />
+          <MapComponent
+            class="item"
+            :map="{
+              name: 'Power Shots',
+              author: 'Sayykii',
+              image: require('@/assets/backgrounds/homepage-3.png'),
+              code: '0CB0-16C8-DAAD-B578',
+            }"
+          />
+          <MapComponent
+            class="item"
+            :map="{
+              name: 'Power Shots',
+              author: 'Sayykii',
+              image: require('@/assets/backgrounds/homepage-1.png'),
+              code: '0CB0-16C8-DAAD-B578',
+            }"
+          />
+        </div>
       </div>
       <div id="s2" class="repeat section-2">
         <MapCard />
-        <!-- <RankCard rank_name="Gold V" rank_type="Type" /> -->
         <a class="arrow" href="#s3">
-        <img src="../../assets/icons/ARROW.png" alt=""/>
+          <img src="../../assets/icons/ARROW.png" alt="" />
         </a>
       </div>
-      <div id="s3" class="repeat section-3">
-        <RankCard rank_name="Diamond V" rank_type="Defender" />
-      </div>
+      <div id="s3" class="repeat section-3"></div>
     </div>
-  </div> 
+  </div>
 </template>
 
 <style scoped>
+@media screen and (max-width: 1300px) {
+  .map-wrapper h2 {
+    font-size: 30px;
+  }
+}
+
 .content {
   position: absolute;
   height: 100%;
   width: 100%;
 }
+h2 {
+  color: white;
+  font-family: Navine;
+  font-size: 60px;
+  font-weight: bold;
+  position: relative;
+  left: 20.5vw;
 
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
 .repeat {
   width: 100%;
   display: block;
@@ -59,10 +149,20 @@
 }
 
 .arrow img {
-  width:6rem;height:auto;
+  width: 6rem;
+  height: auto;
   min-height: 6rem;
 }
 
+.map-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.map-wrapper .item {
+  display: inline-block;
+  margin-left: 1vw;
+}
 
 @keyframes MoveUpDown {
   0%,
@@ -77,13 +177,13 @@
 
 <script>
 import MapCard from "../MapCard";
-import RankCard from "../RankCard";
+import MapComponent from "../MapComponent";
 
 export default {
   name: "Homepage",
   components: {
-    RankCard,
-    MapCard
-  }
+    MapComponent,
+    MapCard,
+  },
 };
 </script>

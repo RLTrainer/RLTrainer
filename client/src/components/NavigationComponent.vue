@@ -75,6 +75,16 @@
 </template>
 
 <style scope>
+
+@media screen and (max-width: 900px) {
+  form {
+    display: none;
+  }
+  .b-navbar-nav-1-item {
+    
+  }
+}
+
 #logo {
   height: 2.3vw;
   width: auto;
