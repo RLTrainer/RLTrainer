@@ -6,7 +6,7 @@
 
 <style scoped>
     #content {
-        background: url(../../assets/backgrounds/homepage-2.png);
+        background: url(../assets/backgrounds/homepage-2.png);
     }
 </style>
 

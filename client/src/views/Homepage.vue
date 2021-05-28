@@ -3,15 +3,59 @@
     <div class="content">
       <div id="s1" class="repeat section-1">
         <a class="arrow" href="#s2">
-          <img src="../../assets/icons/ARROW.png" alt="" />
+          <img src="@/assets/icons/ARROW.png" alt="" />
         </a>
         <h2>Top Weekly</h2>
         <div class="map-wrapper">
           <PackComponent
             class="item"
             :map="{
+              name: 'Big Fat Niggers',
+              author: 'Sayykii',
+              type: 'Aerial',
+              image: require('@/assets/rank_backgrounds/BRONZE.png'),
+              code: '0CB0-16C8-DAAD-B578'
+            }"
+          />
+          <PackComponent
+            class="item"
+            :map="{
               name: 'Power Shots',
               author: 'Sayykii',
+              type: 'Aerial',
+              image: require('@/assets/backgrounds/homepage-2.png'),
+              code: '0CB0-16C8-DAAD-B578'
+            }"
+          />
+          <PackComponent
+            class="item"
+            :map="{
+              name: 'Power Shots',
+              author: 'Sayykii',
+              type: 'Aerial',
+              image: require('@/assets/backgrounds/homepage-3.png'),
+              code: '0CB0-16C8-DAAD-B578'
+            }"
+          />
+          <PackComponent
+            class="item"
+            :map="{
+              name: 'Power Shots',
+              author: 'Sayykii',
+              type: 'Aerial',
+              image: require('@/assets/backgrounds/homepage-1.png'),
+              code: '0CB0-16C8-DAAD-B578'
+            }"
+          />
+        </div>
+        <h2>Top Monthly</h2>
+        <div class="map-wrapper">
+                    <PackComponent
+            class="item"
+            :map="{
+              name: 'Power Shots',
+              author: 'Sayykii',
+              type: 'Aerial',
               image: require('@/assets/rank_backgrounds/BRONZE.png'),
               code: '0CB0-16C8-DAAD-B578',
               description: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
@@ -22,6 +66,7 @@
             :map="{
               name: 'Power Shots',
               author: 'Sayykii',
+              type: 'Aerial',
               image: require('@/assets/backgrounds/homepage-2.png'),
               code: '0CB0-16C8-DAAD-B578',
               description: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
@@ -32,6 +77,7 @@
             :map="{
               name: 'Power Shots',
               author: 'Sayykii',
+              type: 'Goalie',
               image: require('@/assets/backgrounds/homepage-3.png'),
               code: '0CB0-16C8-DAAD-B578',
               description:
@@ -43,6 +89,7 @@
             :map="{
               name: 'Power Shots',
               author: 'Sayykii',
+              type: 'Aerial',
               image: require('@/assets/backgrounds/homepage-1.png'),
               code: '0CB0-16C8-DAAD-B578',
               description:
@@ -50,50 +97,11 @@
             }"
           />
         </div>
-        <h2>Top Monthly</h2>
-        <div class="map-wrapper">
-          <PackComponent
-            class="item"
-            :map="{
-              name: 'Power Shots',
-              author: 'Sayykii',
-              image: require('@/assets/backgrounds/homepage-1.png'),
-              code: '0CB0-16C8-DAAD-B578',
-            }"
-          />
-          <PackComponent
-            class="item"
-            :map="{
-              name: 'Power Shots',
-              author: 'Sayykii',
-              image: require('@/assets/backgrounds/homepage-2.png'),
-              code: '0CB0-16C8-DAAD-B578',
-            }"
-          />
-          <PackComponent
-            class="item"
-            :map="{
-              name: 'Power Shots',
-              author: 'Sayykii',
-              image: require('@/assets/backgrounds/homepage-3.png'),
-              code: '0CB0-16C8-DAAD-B578',
-            }"
-          />
-          <PackComponent
-            class="item"
-            :map="{
-              name: 'Power Shots',
-              author: 'Sayykii',
-              image: require('@/assets/backgrounds/homepage-1.png'),
-              code: '0CB0-16C8-DAAD-B578',
-            }"
-          />
-        </div>
         -->
       </div>
       <div id="s2" class="repeat section-2">
         <a class="arrow" href="#s3">
-          <img src="../../assets/icons/ARROW.png" alt="" />
+          <img src="@/assets/icons/ARROW.png" alt="" />
         </a>
       </div>
       <div id="s3" class="repeat section-3"></div>
@@ -153,14 +161,14 @@ h2 {
 }
 
 .section-1 {
-  background-image: url(../../assets/backgrounds/homepage-1.png);
+  background-image: url(../assets/backgrounds/homepage-1.png);
 }
 .section-2 {
   position: relative;
-  background-image: url(../../assets/backgrounds/homepage-2.png);
+  background-image: url(../assets/backgrounds/homepage-2.png);
 }
 .section-3 {
-  background-image: url(../../assets/backgrounds/homepage-3.png);
+  background-image: url(../assets/backgrounds/homepage-3.png);
 }
 
 .arrow {
@@ -202,7 +210,7 @@ h2 {
 </style>
 
 <script>
-import PackComponent from "../PackComponent";
+import PackComponent from "@/components/PackComponent";
 
 export default {
   name: "Homepage",

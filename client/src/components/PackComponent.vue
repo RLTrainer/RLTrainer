@@ -6,6 +6,8 @@
       }"
       class="card-image"
     >
+      <img class="type-image" :src="this.getTypeImage" alt="{{map.type}}">
+
       <span>{{ map.code }}</span>
       <span>Uploaded by <span style="display: inline-block;">{{map.author}}</span></span>
     </div>
@@ -73,9 +75,17 @@
     display: none;
   }
 
-  .card-image span {
+  .card-image span>* {
     display: none;
   }
+}
+
+.type-image {
+  width: 20%;
+  height: auto;
+  filter: drop-shadow(2px 2px 4px rgba(0,0,0,.6));
+  position: absolute;
+  display: flex;
 }
 
 .card {
@@ -109,6 +119,7 @@
   display: none;
 }
 
+
 .card-image span {
   position: relative;
   top: 40%;
@@ -119,6 +130,7 @@
 }
 
 .card-image {
+  z-index: 1;
   grid-area: image;
 }
 .card-text {
@@ -169,6 +181,7 @@
   color: white;
   font-size: 16px;
 }
+.card-type
 
 /* .card-image span:last-child span {
   color: aqua;
@@ -217,5 +230,10 @@ export default {
       type: Object,
     },
   },
+  computed: {
+    getTypeImage() {
+      return require(`@/assets/map_type_icons/${this.map.type}.png`);
+    }
+  }
 };
 </script>

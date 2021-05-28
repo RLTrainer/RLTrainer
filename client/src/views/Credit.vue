@@ -103,7 +103,7 @@ hr {
 
 #credit {
   position: absolute;
-  background: url(../../assets/backgrounds/homepage-1.png) no-repeat center
+  background: url(../assets/backgrounds/homepage-1.png) no-repeat center
     center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -127,7 +127,7 @@ hr {
 </style>
 
 <script>
-import StaffCreditComponent from "../StaffCreditComponent";
+import StaffCreditComponent from "@/components/StaffCreditComponent";
 
 export default {
   components: {

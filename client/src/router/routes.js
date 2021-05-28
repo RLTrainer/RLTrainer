@@ -1,7 +1,7 @@
-import Homepage from "@/components/pages/Homepage";
-import Credit from "@/components/pages/Credit";
-import Discord from "@/components/pages/Discord";
-import TrainingPacks from "@/components/pages/TrainingPacks";
+import Homepage from "@/views/Homepage";
+import Credit from "@/views/Credit";
+import Discord from "@/views/Discord";
+import TrainingPacks from "@/views/TrainingPacks";
 
 export default [
   {
