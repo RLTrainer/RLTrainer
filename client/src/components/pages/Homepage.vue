@@ -7,7 +7,7 @@
         </a>
         <h2>Top Weekly</h2>
         <div class="map-wrapper">
-          <MapComponent
+          <PackComponent
             class="item"
             :map="{
               name: 'Power Shots',
@@ -17,7 +17,7 @@
               description: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
             }"
           />
-          <MapComponent
+          <PackComponent
             class="item"
             :map="{
               name: 'Power Shots',
@@ -27,7 +27,7 @@
               description: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
             }"
           />
-          <MapComponent
+          <PackComponent
             class="item"
             :map="{
               name: 'Power Shots',
@@ -38,7 +38,7 @@
                 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
             }"
           />
-          <MapComponent
+          <PackComponent
             class="item"
             :map="{
               name: 'Power Shots',
@@ -52,7 +52,7 @@
         </div>
         <h2>Top Monthly</h2>
         <div class="map-wrapper">
-          <MapComponent
+          <PackComponent
             class="item"
             :map="{
               name: 'Power Shots',
@@ -61,7 +61,7 @@
               code: '0CB0-16C8-DAAD-B578',
             }"
           />
-          <MapComponent
+          <PackComponent
             class="item"
             :map="{
               name: 'Power Shots',
@@ -70,7 +70,7 @@
               code: '0CB0-16C8-DAAD-B578',
             }"
           />
-          <MapComponent
+          <PackComponent
             class="item"
             :map="{
               name: 'Power Shots',
@@ -79,7 +79,7 @@
               code: '0CB0-16C8-DAAD-B578',
             }"
           />
-          <MapComponent
+          <PackComponent
             class="item"
             :map="{
               name: 'Power Shots',
@@ -202,12 +202,12 @@ h2 {
 </style>
 
 <script>
-import MapComponent from "../MapComponent";
+import PackComponent from "../PackComponent";
 
 export default {
   name: "Homepage",
   components: {
-    MapComponent,
+    PackComponent,
   },
 };
 </script>

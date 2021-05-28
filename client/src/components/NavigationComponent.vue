@@ -75,7 +75,6 @@
 </template>
 
 <style scope>
-
 @media screen and (max-width: 900px) {
   form {
     display: none;

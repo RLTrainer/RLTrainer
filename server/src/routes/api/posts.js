@@ -11,6 +11,7 @@ router.get('/', async (req, res) => {
     const posts = await loadPostsCollection();
     res.send(await posts.find({}).toArray());
 });
+
 //Add
 router.post('/', async (req, res) => {
     const posts = await loadPostsCollection();
@@ -29,12 +30,12 @@ router.delete('/:id', async (req, res) => {
 });
 
 
-async function loadPostsCollection() {
+async function loadUsers() {
     const client = await mongodb.MongoClient.connect(config.db.uri, {
         useNewUrlParser: true
     });
 
-    return client.db('rltrainer').collection('posts');
+    return client.db('rltrainer').collection('users');
 }
 
 module.exports = router;
